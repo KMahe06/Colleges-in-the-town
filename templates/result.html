@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colleges in the Town - Search Result</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <style>
+        /* Add custom CSS styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        section {
+            margin: 2rem auto;
+            max-width: 600px;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            margin-bottom: 0.5rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            background-color: #ddd;
+            padding: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Colleges</h1>
+</header>
+
+<section>
+    <h2>Search Result</h2>
+    
+    <ul>
+        {% for college in colleges %}
+            <li>{{ college }}</li>
+        {% endfor %}
+    </ul>
+</section>
+
+</body>
+</html>
